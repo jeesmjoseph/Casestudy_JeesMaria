@@ -1,0 +1,143 @@
+.Homepage h3{
+    color: darkcyan;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 5px 2px 6px aquamarine;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.Homepage h4{
+    color: black;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 3px 2px 4px rgb(127, 204, 255);
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.Homepage{
+    min-height: 100vh;
+    border-bottom: 1px solid rgb(233, 245, 244);
+    /* min-width: 83vh; */
+    background-color: rgb(233, 245, 244);
+}
+.logo img{
+    max-height: 90px;
+    max-width: 90px;
+}
+.logo_para{
+    float: right;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.sub_para{
+    font-size: 18px !important ;
+    color: white !important ;
+}
+
+
+.footer-dark{
+    margin-top: 0%;
+    padding-top: 20px;
+    color: ivory;
+    border: 1px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.copyright{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px
+
+) {
+    body {
+        background-size: cover;
+        
+    }
+}
+
+#particles-js {
+    height: 100%
+}
+
+.loginBox {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 200px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box
+}
+
+.user {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.loginBox h3 {
+    color: #59238F;
+    text-align: center;
+    padding: 10px;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.inputBox {
+    position: relative
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    color: #262626
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #59238F;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.loginBox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+}
+
+a:hover {
+    color: #00ffff
+}
+
+.app_intro{
+    display: flex;
+    align-items: flex-end;
+}
+.app_data{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
