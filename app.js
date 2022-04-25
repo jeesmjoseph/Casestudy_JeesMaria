@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded',function () {
+
 
 	const dbUrl = 'https://jsonplaceholder.typicode.com/todos';
 	let list = document.getElementById('base');
-	let id_arr = [];
+	
 
 	function getAllTodos() {
         return new Promise(resolve => {
@@ -13,14 +13,20 @@ document.addEventListener('DOMContentLoaded',function () {
     }
 
 	function appendTextToList(todo) {
-        list.innerHTML += `
-			<input type="checkbox" id ="${todo.id}">
-			${todo.title}
-			<br>	
+		if(todo.completed){
+			list.innerHTML += `
+			<input type="checkbox" id ="${todo.id}" checked disabled>
+			<label style="padding-left : 20px; opacity : 0.5; text-decoration: line-through;">${todo.title}</label>
+			<hr>	
 		`;
-		if (todo.completed){
-			id_arr.push(todo.id);
-		} 
+		}
+		else{
+			list.innerHTML += `
+			<input type="checkbox" id ="${todo.id}" onChange ="cbChange();">
+			<label style="padding-left : 20px">${todo.title}</label>
+			<hr>	
+		`;
+		}
     }
 
 	async function asyncall(){
@@ -30,6 +36,20 @@ document.addEventListener('DOMContentLoaded',function () {
 	}
 	
 	asyncall();
-	
-})
+
+	var count = 0;
+	function cbChange(){
+			if(this.checked == true)
+			{
+				count +=1;
+			}
+			if (count === 5)
+			{
+				alert("Congrats. 5 Tasks have been Successfully Completed !");
+			}	
+		}
+
+
+
+
 
