@@ -1,21 +1,26 @@
-/* General */
-
-.Homepage h2{
+.Homepage h3{
+    color: darkcyan;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 5px 2px 6px aquamarine;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.Homepage h4{
     color: black;
     font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif; 
     text-align: center;
-    text-shadow: 2px 2px 4px bisque;
+    text-shadow: 3px 2px 4px rgb(127, 204, 255);
     padding-top: 30px;
     padding-left: 30px;
-    padding-bottom: 30px;
-    text-decoration: underline;
 }
 .Homepage{
     min-height: 100vh;
     border-bottom: 1px solid rgb(233, 245, 244);
     /* min-width: 83vh; */
-    background-image: radial-gradient(rgb(143, 64, 64),rgb(218, 167, 74),rgb(117, 12, 12));
+    background-color: rgb(233, 245, 244);
 }
 .logo img{
     max-height: 90px;
@@ -47,7 +52,6 @@
 }
 
 
-/* Login Box */
 
 @media screen and (max-width: 600px
 
@@ -61,6 +65,7 @@
 #particles-js {
     height: 100%
 }
+
 .loginBox {
     position: absolute;
     top: 68%;
@@ -125,9 +130,6 @@ a:hover {
     color: #00ffff
 }
 
-
- /* Main Page */
-
 .app_intro{
     display: flex;
     align-items: flex-end;
@@ -139,14 +141,3 @@ a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-/* List */
-#base{
-    border: 1px double black;
-    padding-top: 30px;
-    background-color: rgb(233, 245, 244);
-    font-weight: 600;
-}
-input[type = checkbox]:checked+label{
-    text-decoration: line-through;
-}
