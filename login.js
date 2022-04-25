@@ -6,6 +6,7 @@ pa.innerText = "Check Username and Password"
 function checkID() {
     var uid = document.getElementById("uname");
     if (uid.value == "admin") {
+        console.log("uname correct!");
         return true;
     } 
 }
