@@ -16,7 +16,7 @@
 		if(todo.completed){
 			list.innerHTML += `
 			<input type="checkbox" id ="${todo.id}" checked disabled>
-			<label style="padding-left : 20px; opacity : 0.5; text-decoration: line-through;">${todo.title}</label>
+			<label style="padding-left : 20px; opacity : 0.5">${todo.title}</label>
 			<hr>	
 		`;
 		}
@@ -45,7 +45,7 @@
 			}
 			if (count === 5)
 			{
-				alert("Congrats. 5 Tasks have been Successfully Completed !");
+				alert("Congrats.5 Tasks have been Successfully Completed !!");
 			}	
 		}
 
