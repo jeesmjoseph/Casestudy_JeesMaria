@@ -22,7 +22,7 @@
 		}
 		else{
 			list.innerHTML += `
-			<input type="checkbox" id ="${todo.id}" onChange ="cbChange();">
+			<input type="checkbox" id ="${todo.id}" onChange ="cbChange(this);">
 			<label style="padding-left : 20px">${todo.title}</label>
 			<hr>	
 		`;
@@ -38,8 +38,8 @@
 	asyncall();
 
 	var count = 0;
-	function cbChange(){
-			if(this.checked == true)
+	function cbChange(cbox){
+			if(cbox.checked === true)
 			{
 				count +=1;
 			}
